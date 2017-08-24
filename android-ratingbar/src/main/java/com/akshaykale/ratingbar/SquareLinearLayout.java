@@ -61,18 +61,25 @@ public class SquareLinearLayout extends LinearLayout implements View.OnClickList
 
         this.addView(imageView);
 
-        setFillColour("#dd9609");
+        setFillColour(ArkRatingBarConfig.getColourFillStarInactive(),
+                ArkRatingBarConfig.getColourStrokeStarInactive(),
+                ArkRatingBarConfig.getSizeStrokeStarInactive());
 
         this.setOnClickListener(this);
         //setFill(0.5f);
     }
 
-    public void setFillColour(String colour){
+    /**
+     * @param colourFillStar
+     * @param colourStrokeStar
+     * @param sizeStrokeStar
+     * */
+    public void setFillColour(String colourFillStar, String colourStrokeStar, int sizeStrokeStar){
         Drawable fillDrawable = getBackground();
         if (fillDrawable instanceof GradientDrawable) {
             GradientDrawable gradientDrawable = (GradientDrawable) fillDrawable;
-            gradientDrawable.setColor(Color.parseColor(colour));
-            gradientDrawable.setStroke(0,Color.parseColor(colour));
+            gradientDrawable.setColor(Color.parseColor(colourFillStar));
+            gradientDrawable.setStroke(sizeStrokeStar,Color.parseColor(colourStrokeStar));
         }
     }
 
@@ -108,9 +115,13 @@ public class SquareLinearLayout extends LinearLayout implements View.OnClickList
     public void toggleStar(){
         bActive = !bActive;
         if (bActive){
-            setFillColour("#dd9609");
+            setFillColour(ArkRatingBarConfig.getColourFillStarActive(),
+                    ArkRatingBarConfig.getColourStrokeStarActive(),
+                    ArkRatingBarConfig.getSizeStrokeStarActive());
         }else {
-            setFillStroke("#FFA5A5A5","#000000");
+            setFillColour(ArkRatingBarConfig.getColourFillStarInactive(),
+                    ArkRatingBarConfig.getColourStrokeStarInactive(),
+                    ArkRatingBarConfig.getSizeStrokeStarInactive());
         }
     }
 
