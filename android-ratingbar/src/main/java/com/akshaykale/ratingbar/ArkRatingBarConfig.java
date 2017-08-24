@@ -6,63 +6,65 @@ package com.akshaykale.ratingbar;
 
 public class ArkRatingBarConfig {
 
+    public static int COLOUR_FILL_STAR_ACTIVE = R.color.fill_colour_active;//"#dd9609";
+    public static int COLOUR_FILL_STAR_INACTIVE = R.color.fill_colour_inactive;//"#FFA5A5A5";
 
-    public static String COLOUR_FILL_STAR_ACTIVE = "#dd9609";
-    public static String COLOUR_FILL_STAR_INACTIVE = "#FFA5A5A5";
+    public static int COLOUR_STROKE_STAR_ACTIVE = R.color.stroke_colour_active;//"#000000";
+    public static int COLOUR_STROKE_STAR_INACTIVE = R.color.stroke_colour_inactive;//"#000000";
 
-    public static String COLOUR_STROKE_STAR_ACTIVE = "#000000";
-    public static String COLOUR_STROKE_STAR_INACTIVE = "#000000";
+    public static int SIZE_STROKE_STAR = 0;
 
-    public static int SIZE_STROKE_STAR_ACTIVE = 0;
-    public static int SIZE_STROKE_STAR_INACTIVE = 0;
+    public static boolean STAR_ANIMATION = true;
 
 
-    public static String getColourFillStarActive() {
+
+    public static int getColourFillStarActive() {
         return COLOUR_FILL_STAR_ACTIVE;
     }
 
-    public static void setColourFillStarActive(String colourFillStarActive) {
+    public static void setColourFillStarActive(int colourFillStarActive) {
         COLOUR_FILL_STAR_ACTIVE = colourFillStarActive;
     }
 
-    public static String getColourFillStarInactive() {
+    public static int getColourFillStarInactive() {
         return COLOUR_FILL_STAR_INACTIVE;
     }
 
-    public static void setColourFillStarInactive(String colourFillStarInactive) {
+    public static void setColourFillStarInactive(int colourFillStarInactive) {
         COLOUR_FILL_STAR_INACTIVE = colourFillStarInactive;
     }
 
-    public static String getColourStrokeStarActive() {
+    public static int getColourStrokeStarActive() {
         return COLOUR_STROKE_STAR_ACTIVE;
     }
 
-    public static void setColourStrokeStarActive(String colourStrokeStarActive) {
+    public static void setColourStrokeStarActive(int colourStrokeStarActive) {
         COLOUR_STROKE_STAR_ACTIVE = colourStrokeStarActive;
     }
 
-    public static String getColourStrokeStarInactive() {
+    public static int getColourStrokeStarInactive() {
         return COLOUR_STROKE_STAR_INACTIVE;
     }
 
-    public static void setColourStrokeStarInactive(String colourStrokeStarInactive) {
+    public static void setColourStrokeStarInactive(int colourStrokeStarInactive) {
         COLOUR_STROKE_STAR_INACTIVE = colourStrokeStarInactive;
     }
 
-    public static int getSizeStrokeStarActive() {
-        return SIZE_STROKE_STAR_ACTIVE;
+    public static boolean isStarAnimation() {
+        return STAR_ANIMATION;
     }
 
-    public static void setSizeStrokeStarActive(int sizeStrokeStarActive) {
-        SIZE_STROKE_STAR_ACTIVE = sizeStrokeStarActive;
+    public static void setStarAnimation(boolean starAnimation) {
+        STAR_ANIMATION = starAnimation;
     }
 
-    public static int getSizeStrokeStarInactive() {
-        return SIZE_STROKE_STAR_INACTIVE;
+
+    public static int getSizeStrokeStar() {
+        return SIZE_STROKE_STAR;
     }
 
-    public static void setSizeStrokeStarInactive(int sizeStrokeStarInactive) {
-        SIZE_STROKE_STAR_INACTIVE = sizeStrokeStarInactive;
+    public static void setSizeStrokeStar(int sizeStrokeStar) {
+        SIZE_STROKE_STAR = sizeStrokeStar;
     }
 
 

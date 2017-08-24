@@ -27,10 +27,13 @@
         android:background="#bebebe"
         android:layout_height="65dp">
 
-        <fragment
+        <com.akshaykale.ratingbar.ArkRatingBar
+            android:id="@+id/rat"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:name="com.akshaykale.ratingbar.ArkRatingBar"/>
+            app:num_stars="4"
+            app:rating="3"
+            app:animation="true"/>
 
     </FrameLayout>
 

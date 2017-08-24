@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ArkRatingBar">
+        <attr name="num_stars" format="integer" />
+        <attr name="rating" format="integer" />
+        <attr name="fill_colour_active" format="color" />
+        <attr name="fill_colour_inactive" format="color" />
+        <attr name="stroke_colour_active" format="color" />
+        <attr name="stroke_colour_inactive" format="color" />
+        <attr name="stroke_size" format="integer" />
+        <attr name="animation" format="boolean" />
+
+    </declare-styleable>
+</resources>

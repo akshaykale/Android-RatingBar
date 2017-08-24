@@ -9,7 +9,11 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.akshaykale.ratingbar.ArkRatingBar;
+
 public class MainActivity extends AppCompatActivity {
+
+    ArkRatingBar ratingBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,15 +22,19 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        ratingBar = (ArkRatingBar) findViewById(R.id.rat);
+
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+
+                ratingBar.setRating(10);
+
+                Snackbar.make(view, "Rating: "+ratingBar.getRating(), Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });
-
 
 
 
