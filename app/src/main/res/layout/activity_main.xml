@@ -31,9 +31,17 @@
             android:id="@+id/rat"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:num_stars="4"
+            app:num_stars="7"
             app:rating="3"
-            app:animation="true"/>
+            app:animation="true"
+            android:visibility="visible"
+            />
+<!--
+
+        <com.akshaykale.ratingbar.ArkStar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+-->
 
     </FrameLayout>
 

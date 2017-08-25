@@ -157,6 +157,8 @@ public class ArkStar extends LinearLayout implements View.OnClickListener {
         //toggle the star state
         toggleStar();
 
+        animateStar();
+
         if (listener!=null){
             listener.onStarClicked(view,NUM);
         }
