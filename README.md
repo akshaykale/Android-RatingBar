@@ -23,3 +23,14 @@ MainActivity.java
 ArkRatingBar ratingBar = (ArkRakingBar) findViewbyId(R.id.rate);
 
 ```
+
+| Attributes | Usage |
+|---|---|
+|```app:num_stars```|Number of stars|
+|```app:rating```|Default rating|
+|```app:fill_colour_active```| Star fill colour when it is selected or active|
+|```app:fill_colour_inactive```| Star fill colour when it is deselected or inactive|
+|```app:stroke_colour_active```| Star Strike colour when it is selected or active|
+|```app:stroke_colour_inactive```| Star Strike colour when it is deselected or inactive|
+|```app:stroke_size```| Stroke size|
+|```app:animation```|Star click animation|
