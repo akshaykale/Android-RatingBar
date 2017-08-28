@@ -17,7 +17,7 @@ activity_main.xml
             />
  ```
 
-#### Using JAva code
+#### Using Java code
 MainActivity.java
 ```
 ArkRatingBar ratingBar = (ArkRakingBar) findViewbyId(R.id.rate);
