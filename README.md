@@ -4,6 +4,8 @@ Simple and fully customizable rating bar library with animations.
 
 ### Usage
 
+
+#### Using XML
 activity_main.xml
 ```
  <com.akshaykale.ratingbar.ArkRatingBar
@@ -14,3 +16,10 @@ activity_main.xml
             app:animation="true"
             />
  ```
+
+#### Using JAva code
+MainActivity.java
+```
+ArkRatingBar ratingBar = (ArkRakingBar) findViewbyId(R.id.rate);
+
+```
