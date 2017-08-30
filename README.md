@@ -37,5 +37,10 @@ MainActivity.java
 ArkRatingBar ratingBar = (ArkRakingBar) findViewbyId(R.id.rate);
 
 ```
+#### Java APIs
 
+| Functions | Usage |
+|---|---|
+|```int getRating()```| Get the current rating |
+|``` void setRating(int rating)```| Set the rating |
 
