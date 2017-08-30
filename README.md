@@ -16,8 +16,8 @@ activity_main.xml
             app:animation="true"
             />
  ```
- <br>
- | Attributes | Usage |
+
+| Attributes | Usage |
 |---|---|
 |```app:num_stars```|Number of stars|
 |```app:rating```|Default rating|
