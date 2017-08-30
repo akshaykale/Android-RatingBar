@@ -2,10 +2,11 @@
 Simple and fully customizable rating bar library with animations.
 
 
-### Usage
+## Usage
 
+<br>
+### Using XML
 
-#### Using XML
 activity_main.xml
 ```
  <com.akshaykale.ratingbar.ArkRatingBar
@@ -16,6 +17,7 @@ activity_main.xml
             app:animation="true"
             />
  ```
+#### XML arrtibutes <br>
 
 | Attributes | Usage |
 |---|---|
@@ -28,7 +30,8 @@ activity_main.xml
 |```app:stroke_size```| Stroke size|
 |```app:animation```|Star click animation|
 
-#### Using Java code
+<br><br>
+### Using Java code
 MainActivity.java
 ```
 ArkRatingBar ratingBar = (ArkRakingBar) findViewbyId(R.id.rate);
