@@ -16,15 +16,8 @@ activity_main.xml
             app:animation="true"
             />
  ```
-
-#### Using Java code
-MainActivity.java
-```
-ArkRatingBar ratingBar = (ArkRakingBar) findViewbyId(R.id.rate);
-
-```
-
-| Attributes | Usage |
+ <br>
+ | Attributes | Usage |
 |---|---|
 |```app:num_stars```|Number of stars|
 |```app:rating```|Default rating|
@@ -34,3 +27,12 @@ ArkRatingBar ratingBar = (ArkRakingBar) findViewbyId(R.id.rate);
 |```app:stroke_colour_inactive```| Star Strike colour when it is deselected or inactive|
 |```app:stroke_size```| Stroke size|
 |```app:animation```|Star click animation|
+
+#### Using Java code
+MainActivity.java
+```
+ArkRatingBar ratingBar = (ArkRakingBar) findViewbyId(R.id.rate);
+
+```
+
+
